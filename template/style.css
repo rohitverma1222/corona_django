@@ -1,0 +1,53 @@
+{ % load static %}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #e6e9f0;
+      
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(230, 233, 240, 0.5), rgba(238, 241, 245, 0.5));
+      
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(230, 233, 240, 0.5), rgba(238, 241, 245, 0.5))
+      }
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    padding-top: 20px;
+    font-size: 40px;
+}
+.span{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-left: 18px;
+}
+.form{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.container
+{
+    margin-top: 40px;
+}
+.search{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+}
+.button1
+{
+    padding: 3px;
+    margin-left: 5px;
+    
+}

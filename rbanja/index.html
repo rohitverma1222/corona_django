@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="gradient-custom">
+ 
+    <div class="header">
+      <img src="{% static 'cor.png' %}" height="70px">
+      <h1>COVID 19</h1>
+    </div>
+    <h5 class="span">CASES</h5>
+<div class="container">
+  <div class="search" style="text-align: center; margin-top: 30px;">
+    <form action="search">
+    <input placeholder="Search Country" name="box">
+    <button  class="button1" style="padding: 2px;" type="submit">Search</button>
+ </form>
+  </div>
+
+</div>
+    <div class="card text-center"> 
+      <div class="card-header" style="text-align: center; margin-top: 30px; font-weight: bold;">
+        {{data.kity}}
+      </div>
+      <div class="card-body">
+      <div class="upper">
+          <h1 style="text-align: center; margin-top: 40px; color: rgba(20, 18, 18, 0.65);">Coronavirus Cases :<br> <span style="color:rgb(202, 16, 16) ;" id="case">{{data.case}}</span></h1>
+          <h1 style="text-align: center; margin-top: 40px; rgba(20, 18, 18, 0.65);">Death :<br> <span style="color:#aaa ;">{{data.death}}</span></h1>
+          <h1 style="text-align: center; margin-top: 40px; rgba(20, 18, 18, 0.65);">Recovered :<br> <span style="color:#8ACA2B ;">{{data.recovered}}</span></h1>
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        <p id="date" style="text-align: center; margin-top: 40px;"></p>
+      </div>
+    </div>
+    </div>
+  
+  </body>
+  <script  defer>
+var d=new Date();
+var str=d.getDate()+"-"+d.getMonth()+"-"+d.getFullYear();
+
+document.getElementById("date").innerHTML=str;
+  </script>
+</html>
